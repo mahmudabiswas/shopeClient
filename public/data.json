@@ -1,0 +1,63 @@
+[
+    {
+        "id":"1",
+      
+        "img":"https://i.ibb.co/7CF4C8G/mackbook3.jpg",
+        "name":"iphone",
+        "brandName":"apple",
+        "price":"10,000"
+    },
+    {
+        "id":"2",
+        "img":"https://i.ibb.co/Sd7r3GP/iphonered.webp",
+        "name":"iphone",
+        "brandName":"apple",
+        "price":"10,000"
+    },
+    {
+        "id":"3",
+        "img":"https://i.ibb.co/RvpJwQG/iphone1.webp",
+        "name":"iphone",
+        "brandName":"apple",
+        "price":"10,000"
+    },
+    {
+        "id":"4",
+        "img":"https://i.ibb.co/Sd7r3GP/iphonered.webp",
+        "name":"iphone",
+        "brandName":"apple",
+        "price":"10,000"
+    },
+    {
+        "id":"5",
+        "img":"https://i.ibb.co/RvpJwQG/iphone1.webp",
+        "name":"phone",
+        "brandName":"apple",
+        "price":"10,000"
+    },
+    {
+        "id":"6",
+        "img":"https://i.ibb.co/J3K3wyw/mac1.webp",
+        "name":"mack",
+        "brandName":"appleMack",
+        "price":"80,000"
+    },
+    {
+        "id":"7",
+        "img":"https://i.ibb.co/YNQCTBy/mac3.webp",
+        "name":"mack",
+        "brandName":"appleMack",
+        "price":"90,000"
+    },
+    {
+        "id":"8",
+        "img":"https://i.ibb.co/1L0f5Yj/mack2.webp",
+        "name":"mack",
+        "brandName":"appleMack",
+        "price":"110,000"
+    }
+    
+  
+  
+  
+]
