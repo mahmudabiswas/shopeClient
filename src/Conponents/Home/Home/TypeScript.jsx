@@ -1,5 +1,5 @@
 // import Typewriter from "typewriter-effect";
-const HomeLeft = () => {
+const TypeScript = () => {
   return (
     <div>
       {/* <Typewriter
@@ -20,4 +20,4 @@ const HomeLeft = () => {
   );
 };
 
-export default HomeLeft;
+export default TypeScript;

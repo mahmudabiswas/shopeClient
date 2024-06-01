@@ -72,12 +72,7 @@ const LogIn = () => {
                 className="input input-bordered"
                 name="password"
               />
-              <input
-                type="text"
-                placeholder="img"
-                className="input input-bordered"
-                name="photoURL"
-              />
+
               <p>
                 {" "}
                 Please Register?

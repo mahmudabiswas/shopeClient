@@ -7,6 +7,7 @@ const Cart = ({ brand, brands, setBrand }) => {
 
   const handleDeleteItem = (_id) => {
     console.log(_id, "brand item deleted");
+
     fetch(`http://localhost:5000/brand/${_id}`, {
       method: "delete",
     })
@@ -36,20 +37,49 @@ const Cart = ({ brand, brands, setBrand }) => {
 
   return (
     <div className="flex  ">
-      <div className="card w-96 bg-base-100 shadow-xl   p-10 my-5">
+      <div className="card w-96  shadow-xl bg-red-400   p-10 my-5">
         <div>
-          <h1 className="text-center text-xl font-bold"> {name} </h1>
+          <h1 className="text-center text-2xl  mb-2 font-bold"> {name} </h1>
           <figure>
             <Link to={`/details/${brandName}`}>
-              <img src={img} alt="Shoes" />
+              <img src={img} className="h-[300px]" alt="Shoes" />
             </Link>
           </figure>
           <div className="card-body">
             <h2 className="card-title uppercase"> {brandName} </h2>
-            <p className="text-xl text-gray-600">{description}</p>
-            <h3 className="text-red-500 font-extrabold"> {price}</h3>
+            <p className="text-xl text-white">{description.slice(0, 50)}</p>
+            <button className="btn btn-primary">{price}</button>
             <div className="card-actions ">
-              <p className="text-yellow-400"> {rating} </p>
+              <div>
+                <div className="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-white"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-white"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-white"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-white"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    className="mask mask-star-2 bg-white"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
