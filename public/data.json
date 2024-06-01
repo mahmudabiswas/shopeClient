@@ -1,75 +1,75 @@
-[
-    {
-        "id":1,
-        "img": "https://i.ibb.co/sVXvgVV/xavier-wendling-e2d-Dvd-H3l-IY-unsplash.jpg",
-        "img1": "https://i.ibb.co/sVXvgVV/xavier-wendling-e2d-Dvd-H3l-IY-unsplash.jpg",
-        "img2": "https://i.ibb.co/8P5Gh2L/laura-chouette-2-Lxm-IWKib-Ig-unsplash.jpg",
-        "img3": "https://i.ibb.co/3c67jvk/jonas-jacobsson-W6w-Kf-Ts5-Rxc-unsplash.jpg",
-        "name": "iPhone 14 Pro",
-        "brandName": "Apple",
-        "description": "The latest iPhone with advanced camera systems and a powerful A15 Bionic chip.",
-        "price": 999.99,
-        "rating": 4.8
-    },
-    {
-        "id":2,
-        "img": "https://i.ibb.co/pywdns8/jakob-owens-518ucs-WH1-DQ-unsplash.jpg",
-        "img1": "https://i.ibb.co/pywdns8/jakob-owens-518ucs-WH1-DQ-unsplash.jpg",
-        "img2": "https://i.ibb.co/T4vXdx3/ian-powell-l-Bafub-VUk-Do-unsplash.jpg",
-        "img3": "https://i.ibb.co/qFnn4T2/ady-teenagerinro-V8-MNPJe8-Nt8-unsplash.jpg",
-        "name": "Galaxy S22",
-        "brandName": "Samsung",
-        "description": "Samsung's flagship phone with a stunning display and versatile camera capabilities.",
+// [
+//     {
+//         "id":1,
+//         "img": "https://i.ibb.co/sVXvgVV/xavier-wendling-e2d-Dvd-H3l-IY-unsplash.jpg",
+//         "img1": "https://i.ibb.co/sVXvgVV/xavier-wendling-e2d-Dvd-H3l-IY-unsplash.jpg",
+//         "img2": "https://i.ibb.co/8P5Gh2L/laura-chouette-2-Lxm-IWKib-Ig-unsplash.jpg",
+//         "img3": "https://i.ibb.co/3c67jvk/jonas-jacobsson-W6w-Kf-Ts5-Rxc-unsplash.jpg",
+//         "name": "iPhone 14 Pro",
+//         "brandName": "Apple",
+//         "description": "The latest iPhone with advanced camera systems and a powerful A15 Bionic chip.",
+//         "price": 999.99,
+//         "rating": 4.8
+//     },
+//     {
+//         "id":2,
+//         "img": "https://i.ibb.co/pywdns8/jakob-owens-518ucs-WH1-DQ-unsplash.jpg",
+//         "img1": "https://i.ibb.co/pywdns8/jakob-owens-518ucs-WH1-DQ-unsplash.jpg",
+//         "img2": "https://i.ibb.co/T4vXdx3/ian-powell-l-Bafub-VUk-Do-unsplash.jpg",
+//         "img3": "https://i.ibb.co/qFnn4T2/ady-teenagerinro-V8-MNPJe8-Nt8-unsplash.jpg",
+//         "name": "Galaxy S22",
+//         "brandName": "Samsung",
+//         "description": "Samsung's flagship phone with a stunning display and versatile camera capabilities.",
     
-        "price": 899.99,
-        "rating": 4.7
-    },
-    {
-        "id":3,
-        "img": "https://i.ibb.co/ch6wWkx/isaac-smith-BZhswl-D0jf-A-unsplash.jpg",
-        "img1": "https://i.ibb.co/ch6wWkx/isaac-smith-BZhswl-D0jf-A-unsplash.jpg",
-        "img2": "https://i.ibb.co/DkK2Vg6/ben-kolde-d6dx-Qwmx-V2-Q-unsplash.jpg",
-        "img3": "https://i.ibb.co/99j7MQB/oscar-nord-n2-Spim5a-ZA4-unsplash.jpg",
-        "name": "Pixel 7",
-        "brandName": "nokia",
-        "description": "Google's latest Pixel phone with pure Android experience and excellent camera performance.",
-        "price": 799.99,
-        "rating": 4.6
-    },
-    {
-        "id":4,
-        "img": "https://i.ibb.co/6vnqJrw/alexandr-bormotin-3dj-m2k-Coho-unsplash.jpg",
-        "img1": "https://i.ibb.co/6vnqJrw/alexandr-bormotin-3dj-m2k-Coho-unsplash.jpg",
-        "img2": "https://i.ibb.co/tBJGQRJ/vimal-krishnattri-f-KZdw-Ax92-Ks-unsplash.jpg",
-        "img3": "https://i.ibb.co/7KV5LXN/sumeet-singh-Mp-w-J3-Yx-Yzc-unsplash.jpg",
-        "name": "OnePlus 10 Pro",
-        "brandName": "OnePlus",
-        "description": "OnePlus's high-end smartphone with fast performance and great build quality.",
-        "price": 749.99,
-        "rating": 4.5
-    },
-    {
-        "id":5,
-        "img": "https://i.ibb.co/w7X74n7/cody-gallo-sg-XF7-Vl3-Yek-unsplash.jpg",
-        "img1": "https://i.ibb.co/w7X74n7/cody-gallo-sg-XF7-Vl3-Yek-unsplash.jpg",
-        "img2": "https://i.ibb.co/3YVsn42/theregisti-VEb-UF1-Bn-Gk-A-unsplash.jpg",
-        "img3": "https://i.ibb.co/nrY8cfT/mark-chan-IGUj70m-KSy-A-unsplash.jpg",
-        "name": "Xperia 1 IV",
-        "brandName": "Sony",
-        "description": "Sony's premium phone with 4K display and professional-grade camera technology.",
-        "price": 999.99,
-        "rating": 4.4
-    },
-    {
-        "id":6,
-        "img": "https://i.ibb.co/4sCRvkp/n-tho-duc-1-YO66-JHPIaw-unsplash.jpg",
-        "img1": "https://i.ibb.co/4sCRvkp/n-tho-duc-1-YO66-JHPIaw-unsplash.jpg",
-        "img2": "https://i.ibb.co/L06069f/xingye-jiang-a-GZYFSKv8c-I-unsplash.jpg",
-        "img3": "https://i.ibb.co/9stLsRN/nikita-kostrykin-5-l-SW0-Mi-E0-unsplash.jpg",
-        "name": "Mi 11 Ultra",
-        "brandName": "Xiaomi",
-        "description": "Xiaomi's top-tier phone with powerful specs and an excellent camera system.",
-        "price": 699.99,
-        "rating": 4.3
-    }
-]
+//         "price": 899.99,
+//         "rating": 4.7
+//     },
+//     {
+//         "id":3,
+//         "img": "https://i.ibb.co/ch6wWkx/isaac-smith-BZhswl-D0jf-A-unsplash.jpg",
+//         "img1": "https://i.ibb.co/ch6wWkx/isaac-smith-BZhswl-D0jf-A-unsplash.jpg",
+//         "img2": "https://i.ibb.co/DkK2Vg6/ben-kolde-d6dx-Qwmx-V2-Q-unsplash.jpg",
+//         "img3": "https://i.ibb.co/99j7MQB/oscar-nord-n2-Spim5a-ZA4-unsplash.jpg",
+//         "name": "Pixel 7",
+//         "brandName": "nokia",
+//         "description": "Google's latest Pixel phone with pure Android experience and excellent camera performance.",
+//         "price": 799.99,
+//         "rating": 4.6
+//     },
+//     {
+//         "id":4,
+//         "img": "https://i.ibb.co/6vnqJrw/alexandr-bormotin-3dj-m2k-Coho-unsplash.jpg",
+//         "img1": "https://i.ibb.co/6vnqJrw/alexandr-bormotin-3dj-m2k-Coho-unsplash.jpg",
+//         "img2": "https://i.ibb.co/tBJGQRJ/vimal-krishnattri-f-KZdw-Ax92-Ks-unsplash.jpg",
+//         "img3": "https://i.ibb.co/7KV5LXN/sumeet-singh-Mp-w-J3-Yx-Yzc-unsplash.jpg",
+//         "name": "OnePlus 10 Pro",
+//         "brandName": "OnePlus",
+//         "description": "OnePlus's high-end smartphone with fast performance and great build quality.",
+//         "price": 749.99,
+//         "rating": 4.5
+//     },
+//     {
+//         "id":5,
+//         "img": "https://i.ibb.co/w7X74n7/cody-gallo-sg-XF7-Vl3-Yek-unsplash.jpg",
+//         "img1": "https://i.ibb.co/w7X74n7/cody-gallo-sg-XF7-Vl3-Yek-unsplash.jpg",
+//         "img2": "https://i.ibb.co/3YVsn42/theregisti-VEb-UF1-Bn-Gk-A-unsplash.jpg",
+//         "img3": "https://i.ibb.co/nrY8cfT/mark-chan-IGUj70m-KSy-A-unsplash.jpg",
+//         "name": "Xperia 1 IV",
+//         "brandName": "Sony",
+//         "description": "Sony's premium phone with 4K display and professional-grade camera technology.",
+//         "price": 999.99,
+//         "rating": 4.4
+//     },
+//     {
+//         "id":6,
+//         "img": "https://i.ibb.co/4sCRvkp/n-tho-duc-1-YO66-JHPIaw-unsplash.jpg",
+//         "img1": "https://i.ibb.co/4sCRvkp/n-tho-duc-1-YO66-JHPIaw-unsplash.jpg",
+//         "img2": "https://i.ibb.co/L06069f/xingye-jiang-a-GZYFSKv8c-I-unsplash.jpg",
+//         "img3": "https://i.ibb.co/9stLsRN/nikita-kostrykin-5-l-SW0-Mi-E0-unsplash.jpg",
+//         "name": "Mi 11 Ultra",
+//         "brandName": "Xiaomi",
+//         "description": "Xiaomi's top-tier phone with powerful specs and an excellent camera system.",
+//         "price": 699.99,
+//         "rating": 4.3
+//     }
+// ]

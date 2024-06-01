@@ -1,10 +1,7 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { AuthContext } from "../../../AuthProvider";
-import { Link } from "react-router-dom";
 
 const NabBar = () => {
-  const { user, logOut } = useContext(AuthContext);
   const [open, setOpen] = useState(false);
 
   const routes = [
@@ -17,12 +14,6 @@ const NabBar = () => {
     { id: 4, path: "/footer", name: "Footer" },
   ];
 
-  const handleLogOut = () => {
-    logOut()
-      .then(() => console.log("use log out"))
-      .catch((error) => console.log(error));
-  };
-
   return (
     <div>
       <nav className="  ">
@@ -31,8 +22,8 @@ const NabBar = () => {
         </div>
 
         <div
-          className={`md:flex absolute md:static text-2xl gap-10  bg-red-700 p-6 text-white ${
-            open ? "top-16" : "-top-60"
+          className={`md:flex absolute md:static text-2xl gap-10  bg-red-600 p-6 text-white ${
+            open ? "top-28" : "-top-72"
           }`}
         >
           {routes.map((route) => (
@@ -40,7 +31,7 @@ const NabBar = () => {
               <a
                 href={route.path}
                 key={route.id}
-                className="hover:bg-blue-300 p-2 rounded-xl"
+                className="hover:text-black hover:font-extrabold"
               >
                 {route.name}
               </a>
@@ -48,25 +39,6 @@ const NabBar = () => {
           ))}
         </div>
       </nav>
-      <div className=" ml-4">
-        {user?.email ? (
-          <>
-            <label tabIndex={0} className="  btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img src={user?.photoURL} alt={user?.display} />
-              </div>
-            </label>
-            <a onClick={handleLogOut} className="btn">
-              Sign out
-            </a>
-          </>
-        ) : (
-          <Link to="/login">
-            {" "}
-            <button className="btn">Log In</button>{" "}
-          </Link>
-        )}
-      </div>
     </div>
   );
 };
