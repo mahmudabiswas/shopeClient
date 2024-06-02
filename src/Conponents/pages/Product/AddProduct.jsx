@@ -11,13 +11,16 @@ const handleCoffeeSubmit = (e) => {
   const rating = form.rating.value;
   const user = { img, name, brandName, price, description, rating };
   console.log(user);
-  fetch("http://localhost:5000/brand", {
-    method: "Post",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(user),
-  })
+  fetch(
+    "https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand",
+    {
+      method: "Post",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    }
+  )
     .then((res) => res.json())
     .then((data) => {
       console.log(data);

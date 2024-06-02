@@ -40,7 +40,10 @@ const routes = createBrowserRouter([
             <MyCart />
           </PrivateRoute>
         ),
-        loader: () => fetch(`http://localhost:5000/brand`),
+        loader: () =>
+          fetch(
+            `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand`
+          ),
       },
       {
         path: "/contact",
@@ -54,7 +57,9 @@ const routes = createBrowserRouter([
         path: "/update/:id",
         element: <Update />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/brand/${params.id}`),
+          fetch(
+            `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand/${params.id}`
+          ),
       },
       {
         path: "/details/:brandName",
@@ -63,7 +68,10 @@ const routes = createBrowserRouter([
       {
         path: "/updateDetail/:id",
         element: <UpdateDetails />,
-        loader: () => fetch(`http://localhost:5000/brand`),
+        loader: () =>
+          fetch(
+            `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand`
+          ),
       },
       {
         path: "/login",
