@@ -8,12 +8,9 @@ const Cart = ({ brand, brands, setBrand }) => {
   const handleDeleteItem = (_id) => {
     console.log(_id, "brand item deleted");
 
-    fetch(
-      `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand/${_id}`,
-      {
-        method: "delete",
-      }
-    )
+    fetch(`https://brand-server-mu.vercel.app/brand/${_id}`, {
+      method: "delete",
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

@@ -16,16 +16,13 @@ const Update = () => {
     const rating = form.rating.value;
     const user = { img, name, brandName, price, description, rating };
     console.log(user);
-    fetch(
-      `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand/${_id}`,
-      {
-        method: "Put",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(user),
-      }
-    )
+    fetch(`https://brand-server-mu.vercel.app/brand/${_id}`, {
+      method: "Put",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(user),
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

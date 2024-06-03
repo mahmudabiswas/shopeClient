@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link, NavLink } from "react-router-dom";
 
 const NabBar = () => {
   const [open, setOpen] = useState(false);
 
   const routes = [
     { id: 1, path: "/", name: "Home" },
+
     { id: 2, path: "/addProduct", name: "Add Product" },
     { id: 3, path: "/myCart", name: "My Cart" },
+
     { id: 4, path: "/contact", name: "Contact" },
     { id: 4, path: "/about", name: "About" },
     { id: 4, path: "/login", name: "LogIn" },
@@ -28,13 +31,13 @@ const NabBar = () => {
         >
           {routes.map((route) => (
             <p>
-              <a
-                href={route.path}
+              <Link
+                to={route.path}
                 key={route.id}
                 className="hover:text-black hover:font-extrabold"
               >
                 {route.name}
-              </a>
+              </Link>
             </p>
           ))}
         </div>

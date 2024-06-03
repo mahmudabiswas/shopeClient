@@ -12,13 +12,12 @@ import Footer from "./Conponents/Home/Footer/Footer.jsx";
 import Update from "./Conponents/pages/My Cart/Update.jsx";
 import Details from "./Conponents/pages/Details/Details.jsx";
 import UpdateDetails from "./Conponents/pages/Details/UpdateDetails.jsx";
-import PrivateRoute from "./Conponents/pages/privateRoute/PrivateRoute.jsx";
+import PrivateRawter from "./Conponents/Home/PrivateRawter.jsx/PrivateRawter.jsx";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-
     errorElement: <Error />,
     children: [
       {
@@ -28,22 +27,19 @@ const routes = createBrowserRouter([
       {
         path: "/addProduct",
         element: (
-          <PrivateRoute>
+          <PrivateRawter>
             <AddProduct />
-          </PrivateRoute>
+          </PrivateRawter>
         ),
       },
       {
         path: "/myCart",
         element: (
-          <PrivateRoute>
+          <PrivateRawter>
             <MyCart />
-          </PrivateRoute>
+          </PrivateRawter>
         ),
-        loader: () =>
-          fetch(
-            `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand`
-          ),
+        loader: () => fetch(`https://brand-server-mu.vercel.app/brand`),
       },
       {
         path: "/contact",
@@ -57,9 +53,7 @@ const routes = createBrowserRouter([
         path: "/update/:id",
         element: <Update />,
         loader: ({ params }) =>
-          fetch(
-            `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand/${params.id}`
-          ),
+          fetch(`https://brand-server-mu.vercel.app/brand/${params.id}`),
       },
       {
         path: "/details/:brandName",
@@ -68,10 +62,7 @@ const routes = createBrowserRouter([
       {
         path: "/updateDetail/:id",
         element: <UpdateDetails />,
-        loader: () =>
-          fetch(
-            `https://brand-server-p83z73l34-mahmudas-projects-d5350606.vercel.app/brand`
-          ),
+        loader: () => fetch(`https://brand-server-mu.vercel.app/brand`),
       },
       {
         path: "/login",

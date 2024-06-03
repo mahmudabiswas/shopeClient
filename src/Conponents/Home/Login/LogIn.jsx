@@ -14,8 +14,8 @@ const LogIn = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    const photoURL = form.photoURL.value;
-    console.log(email, password, photoURL);
+
+    console.log(email, password);
     setError("");
     if (password.length < 6) {
       Swal.fire({
@@ -35,7 +35,11 @@ const LogIn = () => {
         console.log(result.user);
 
         // update profile
-        UpdateUser(photoURL);
+        UpdateUser(photoURL)
+          .then((user) => {
+            console.log(res.user);
+          })
+          .catch((error) => console.log(error));
 
         //
         // e.target.reset();
