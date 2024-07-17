@@ -15,23 +15,23 @@ const UseProfile = () => {
   return (
     <div>
       <div className="flex justify-between items-center ">
-        {user?.email ? (
-          <>
-            <label tabIndex={0} className="  btn-circle avatar">
-              <div className="w-510 rounded-full">
-                <img src={user?.photoURL} alt={user?.display} />
-              </div>
-            </label>
-            <a onClick={handleLogOut} className="btn">
+        <>
+          <label tabIndex={0} className="  btn-circle avatar">
+            <div className="w-510 rounded-full">
+              {user && <img src={user?.photoURL} alt={user?.display} />}
+            </div>
+          </label>
+          {user?.email ? (
+            <p onClick={handleLogOut} className="btn">
               Sign out
-            </a>
-          </>
-        ) : (
-          <Link to="/login" className="mr-2">
-            {" "}
-            <button className="btn">Log In</button>{" "}
-          </Link>
-        )}
+            </p>
+          ) : (
+            <Link to="/login" className="mr-2">
+              {" "}
+              <button className="btn">Log In</button>{" "}
+            </Link>
+          )}
+        </>
       </div>
     </div>
   );

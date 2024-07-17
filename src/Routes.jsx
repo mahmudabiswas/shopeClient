@@ -12,7 +12,7 @@ import Footer from "./Conponents/Home/Footer/Footer.jsx";
 import Update from "./Conponents/pages/My Cart/Update.jsx";
 import Details from "./Conponents/pages/Details/Details.jsx";
 import UpdateDetails from "./Conponents/pages/Details/UpdateDetails.jsx";
-import PrivateRawter from "./Conponents/Home/PrivateRawter.jsx/PrivateRawter.jsx";
+import PrivateRoute from "./Conponents/pages/privateRoute/PrivateRoute.jsx";
 
 const routes = createBrowserRouter([
   {
@@ -27,17 +27,17 @@ const routes = createBrowserRouter([
       {
         path: "/addProduct",
         element: (
-          <PrivateRawter>
+          <PrivateRoute>
             <AddProduct />
-          </PrivateRawter>
+          </PrivateRoute>
         ),
       },
       {
         path: "/myCart",
         element: (
-          <PrivateRawter>
+          <PrivateRoute>
             <MyCart />
-          </PrivateRawter>
+          </PrivateRoute>
         ),
         loader: () => fetch(`https://brand-server-mu.vercel.app/brand`),
       },

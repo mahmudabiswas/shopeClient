@@ -4,19 +4,29 @@ import { AuthContext } from "../../../AuthProvider";
 import Google from "../Login/Google";
 
 const Registar = () => {
-  const { register } = useContext(AuthContext);
+  const { register, updateUserProfile } = useContext(AuthContext);
   const submitRegisterForm = (e) => {
     e.preventDefault();
     const form = event.target;
     const name = form.name.value;
-    const img = form.img.value;
+    const photoUrl = form.photoUrl.value;
     const email = form.email.value;
     const password = form.password.value;
-    const user = { name, img, email, password };
+    const user = { name, photoUrl, email, password };
     console.log(user);
 
     register(email, password)
-      .then((result) => console.log(result.user))
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        updateUserProfile(photoUrl, name)
+          .then((res) => {
+            console.log(res.user);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      })
       .then((err) => console.error(err));
   };
   return (
@@ -37,12 +47,12 @@ const Registar = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Img</span>
+                <span className="label-text">photoUrl</span>
               </label>
               <input
-                type="text"
-                name="img"
-                placeholder="Img"
+                type="photoUrl"
+                name="photoUrl"
+                placeholder="photoUrl"
                 className="input input-bordered"
               />
             </div>

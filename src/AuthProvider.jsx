@@ -30,14 +30,13 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const UpdateUser = (photoURL) => {
-    setLoading(true);
-    const profileUpdate = updateProfile(auth.currentUser, {
-      photoURL: photoURL,
+  // updateUserProfile
+  const updateUserProfile = (name, photo) => {
+    return updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: photo,
     });
-    return profileUpdate();
   };
-
   // google
 
   const popUp = () => {
@@ -68,7 +67,7 @@ const AuthProvider = ({ children }) => {
     logIn,
     logOut,
     popUp,
-    UpdateUser,
+    updateUserProfile,
   };
 
   return (

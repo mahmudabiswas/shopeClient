@@ -34,15 +34,6 @@ const LogIn = () => {
       .then((result) => {
         console.log(result.user);
 
-        // update profile
-        UpdateUser(photoURL)
-          .then((user) => {
-            console.log(res.user);
-          })
-          .catch((error) => console.log(error));
-
-        //
-        // e.target.reset();
         navigate("/");
       })
       .catch((error) => {
